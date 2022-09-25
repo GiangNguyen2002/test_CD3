@@ -1,0 +1,481 @@
+<!-- Em chỉ mới làm trang chủ, trang chi tiết sản phẩm, trang đăng ký và trang giỏ hàng thôi ạ -->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Trang chủ</title>
+	<link rel="stylesheet" type="text/css" href="../../css/home_css.css">
+	<link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<!-- HEADER -->
+	<div class="container header">
+		<div class="row header">
+			<div class="col-md-2">
+				<img src="../../images/logo.png" style="width: 100px; height: 60px;">
+			</div>
+			<div class="col-md-4">
+				<div class="input-group mb-3">
+					  <input type="text" class="form-control" placeholder="Nhập sản phẩm cần tìm" aria-label="Recipient's username" aria-describedby="button-addon2">
+					  <button class="btn btn-outline-secondary" type="button" id="button-addon2" style="background-color:#2F503D;"><i class="fa fa-search" style="color:white;"></i></button>
+				</div>
+			</div>
+			<div class="col-md-2">
+				<a href="login_page.html" class="btn btn-outline-success"><i style="font-size:24px; color: #C4C3C3" class='fas'>&#xf0d1;</i> Theo dõi đơn hàng</a>	     
+			</div>
+			<div class="col-md-2">
+				<a href="cart_page.html" class="btn btn-outline-success"><i style="font-size:24px; color: #C4C3C3" class='fas'>&#xf07a;</i> Giỏ hàng</a>     
+			</div>
+			<div class="col-md-2">
+				<a href="login_page.html" class="btn btn-outline-success">Tài khoản</a>     
+			</div>
+		</div>
+	</div>
+	<!-- MENU -->
+	<div class="container-fluid" style="background-color: #2F503D; ">
+		<div class="row header menu ">
+			<div class="col-md-2">
+				<ul class="nav">
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="home_page.html" style="color: white;">TRANG CHỦ</a>
+					</li>
+				</ul>
+			</div>
+			<div class="col-md-2">
+				<ul class="nav">
+					<li class="nav-item dropdown">
+			          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" style="color: white;" data-bs-toggle="dropdown" aria-expanded="false">
+			            THƯƠNG HIỆU
+			          </a>
+			          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+			            <li><a class="dropdown-item" href="#">CELLNCO</a></li>
+			            <div class="dropdown-divider"></div>
+			            <li><a class="dropdown-item" href="#">LIPHIP</a></li>
+			            <div class="dropdown-divider"></div>
+			            <li><a class="dropdown-item" href="#">CORINGCO</a></li>
+			            <div class="dropdown-divider"></div>
+			            <li><a class="dropdown-item" href="#">BL SECRET</a></li>
+			            <div class="dropdown-divider"></div>
+			            <li><a class="dropdown-item" href="#">LOHAJIN</a></li>
+			            <div class="dropdown-divider"></div>
+			            <li><a class="dropdown-item" href="#">MERBLISS</a></li>
+			            <div class="dropdown-divider"></div>
+			            <li><a class="dropdown-item" href="#">KOELCIA</a></li>
+			            <div class="dropdown-divider"></div>
+			            <li><a class="dropdown-item" href="#">BELLCA</a></li>
+			            <div class="dropdown-divider"></div>
+			            <li><a class="dropdown-item" href="#">BENEW</a></li>
+			          </ul>
+			        </li>
+				</ul>
+			</div>
+			<div class="col-md-2">
+				<ul class="nav">
+					<li class="nav-item dropdown">
+			          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" style="color: white;" data-bs-toggle="dropdown" aria-expanded="false">
+			            TRANG ĐIỂM
+			          </a>
+			          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+			          	<li><b>&emsp; EYES MAKEUP</b></li>
+			            <div class="dropdown-divider"></div>
+			            <li><a class="dropdown-item" href="#">Mascara</a></li>
+			            <div class="dropdown-divider"></div>
+			            <li><a class="dropdown-item" href="#">Phấn mắt</a></li>
+			            <div class="dropdown-divider"></div>
+			            <li><a class="dropdown-item" href="#">Kẻ mày, Kẻ mắt</a></li>
+			            <div class="dropdown-divider"></div>
+			            <li><a class="dropdown-item" href="#">Dưỡng mi</a></li>
+			            <div class="dropdown-divider"></div>
+			            <li><b>&emsp; FACE MAKEUP</b></li>
+			            <div class="dropdown-divider"></div>
+			            <li><a class="dropdown-item" href="#">Kem che khuyết điểm</a></li>
+			            <div class="dropdown-divider"></div>
+			            <li><a class="dropdown-item" href="#">Kem nền</a></li>
+			            <div class="dropdown-divider"></div>
+			            <li><a class="dropdown-item" href="#">Phấn nước</a></li>
+			            <div class="dropdown-divider"></div>
+			            <li><b>&emsp; LIP MAKEUP</b></li>
+			            <div class="dropdown-divider"></div>
+			            <li><a class="dropdown-item" href="#">Son thỏi</a></li>
+			            <div class="dropdown-divider"></div>
+			            <li><a class="dropdown-item" href="#">Son tint</a></li>
+			          </ul>
+			        </li>
+				</ul>
+			</div>
+			<div class="col-md-2">
+				<ul class="nav">
+					<li class="nav-item dropdown">
+			          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" style="color: white;" data-bs-toggle="dropdown" aria-expanded="false">
+			            CHĂM SÓC DA
+			          </a>
+			          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+			          	<li><b>&emsp; DƯỠNG DA</b></li>
+			            <div class="dropdown-divider"></div>
+			            <li><a class="dropdown-item" href="#">Kem dưỡng trắng da</a></li>
+			            <div class="dropdown-divider"></div>
+			            <li><a class="dropdown-item" href="#">Kem chống nắng</a></li>
+			            <div class="dropdown-divider"></div>
+			            <li><a class="dropdown-item" href="#">Kem trị mụn</a></li>
+			            <div class="dropdown-divider"></div>
+			            <li><a class="dropdown-item" href="#">Toner - Nước hoa hồng</a></li>
+			            <div class="dropdown-divider"></div>
+			            <li><b>&emsp; LÀM SẠCH DA</b></li>
+			            <div class="dropdown-divider"></div>
+			            <li><a class="dropdown-item" href="#">Sữa rửa mặt</a></li>
+			            <div class="dropdown-divider"></div>
+			            <li><a class="dropdown-item" href="#">Tẩy trang</a></li>
+			            <div class="dropdown-divider"></div>
+			            <li><a class="dropdown-item" href="#">Tẩy tế bào chết</a></li>
+			            <div class="dropdown-divider"></div>
+			            <li><b>&emsp; MASK</b></li>
+			            <div class="dropdown-divider"></div>
+			            <li><a class="dropdown-item" href="#">Mặt nạ giấy</a></li>
+			        </ul>
+			        </li>
+				</ul>
+			</div>
+			<div class="col-md-1">
+				<ul class="nav">
+					<li class="nav-item dropdown">
+			          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" style="color: white;" data-bs-toggle="dropdown" aria-expanded="false">
+			            TIN TỨC
+			          </a>
+			          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+			            <li><a class="dropdown-item" href="#">Giúp bạn làm đẹp</a></li>
+			            <div class="dropdown-divider"></div>
+			            <li><a class="dropdown-item" href="#">Review mỹ phẩm</a></li>
+			            <div class="dropdown-divider"></div>
+			            <li><a class="dropdown-item" href="#">Cách trang điểm</a></li>
+			            <div class="dropdown-divider"></div>
+			            <li><a class="dropdown-item" href="#">Chăm sóc môi</a></li>
+			            <div class="dropdown-divider"></div>
+			            <li><a class="dropdown-item" href="#">Chăm sóc da mặt</a></li>
+			            <div class="dropdown-divider"></div>
+			            <li><a class="dropdown-item" href="#">Làm đẹp cho nam</a></li>
+			        </ul>
+			        </li>
+				</ul>
+			</div>
+			<div class="col-md-1">
+				<ul class="nav">
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="#" style="color: white;">ĐẠI LÝ</a>
+					</li>
+				</ul>
+			</div>
+			<div class="col-md-2">
+				<ul class="nav">
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="#" style="color: white;">FLASH SALE</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- Slide_show -->
+	<div class="container-fluid">
+		<div class="row">
+			<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+			  <div class="carousel-inner">
+			    <div class="carousel-item active" data-bs-interval="10000">
+			      <img src="../../images/slide_show1.jpg" class="d-block w-100" alt="..." height="410px">
+			    </div>
+			    <div class="carousel-item" data-bs-interval="2000">
+			      <img src="../../images/slide_show2.jpg" class="d-block w-100" alt="..." height="410px">
+			    </div>
+			    <div class="carousel-item">
+			      <img src="../../images/slide_show3.jpg" class="d-block w-100" alt="..." height="410px">
+			    </div>
+			    <div class="carousel-item">
+			      <img src="../../images/slide_show4.jpg" class="d-block w-100" alt="..." height="410px">
+			    </div>
+			  </div>
+			  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+			    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			    <span class="visually-hidden">Previous</span>
+			  </button>
+			  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+			    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+			    <span class="visually-hidden">Next</span>
+			  </button>
+			</div>
+		</div>
+	</div>
+	<!-- Banner -->
+	<div class="container">
+		<h4 align="center"><br>TOP 8 hãng mỹ phẩm Hàn Quốc nổi tiếng được phái đẹp săn đón nhất</h4><br>
+		<div class="row">
+			<div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+				  <div class="carousel-indicators">
+				    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+				    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+				    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+				  </div>
+				  <div class="carousel-inner">
+				    <div class="carousel-item active" data-bs-interval="10000">
+				    	<div class="container">
+				    		<div class="row" align="center">
+				    			<div class="col-md-5" style="width: 30%;">
+				    				<img src="../../images/banner1.PNG"alt="...">
+				    			</div>
+				    			<div class="col-md-4" style="width: 30%;">
+				    				<img src="../../images/banner2.PNG" alt="...">
+				    			</div>
+				    			<div class="col-md-3" style="width: 30%;">
+				    				<img src="../../images/banner3.PNG" alt="...">
+				    			</div>
+				    		</div>
+				    	</div>
+				    <div class="carousel-item" data-bs-interval="2000">
+				      <div class="container">
+				    		
+				    	</div>
+				    </div>
+				    <div class="carousel-item">
+				      <img src="..." class="d-block w-100" alt="...">
+				      <div class="carousel-caption d-none d-md-block">
+				        
+				      </div>
+				    </div>
+				  </div>
+				  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+				    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				    <span class="visually-hidden">Previous</span>
+				  </button>
+				  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+				    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+				    <span class="visually-hidden">Next</span>
+				  </button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Product -->
+	<div class="container">
+		<h4 align="center"><br>MÓN QUÀ Ý NGHĨA THAY NGÀN LỜI YÊU THƯƠNG</h4><br>
+		<div class="row header">
+			<div class="col-md-3">
+				<div class="card" style="width: 70%;">
+					<img src="../../images/SON_BL_SECRET_LIPSTICK.png" class="card-img-top" alt="..." style="width: 200px;" align="center"><span style="width: 40px; margin-top: -50px;" class="badge bg-success">56%</span>
+					<div class="card-body">
+					<h6 class="card-title">[FLASH SALE]SON BL SECRET LIPSTICKS</h6>
+					 <a href="../product_details/pr_detail_BL_SECRET_LIPSTICKS.html" class="btn btn-outline-success">Xem thêm</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="card" style="width: 70%;">
+					<img src="../../images/Son_Merbliss_City_Holic_Lip_Rouge_Matte.jpg" class="card-img-top" alt="..." style="width: 200px; " align="center" ><span style="width: 40px; margin-top: -50px;" class="badge bg-success">50%</span>
+					<div class="card-body">
+					<h6 class="card-title">[HOT]SON MERBLISS CITY HOLIC LIP ROUGE </h6>
+					 <a href="../product_details/pr_detail_BL_SECRET_LIPSTICKS.html" class="btn btn-outline-success">Xem thêm</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="card" style="width: 70%;">
+					<img src="../../images/Son_Colour_kiss.png" class="card-img-top" alt="..." style="width: 200px;"><span class="badge bg-danger" style="width: 40px; margin-top: -50px;" >New</span>
+					<div class="card-body">
+					<h6 class="card-title">SON COLOUR KISS</h6><br>
+					 <a href="../product_details/pr_detail_BL_SECRET_LIPSTICKS.html"  class="btn btn-outline-success">Xem thêm</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="card" style="width: 70%;">
+					<img src="../../images/SON_LIPHIP.jpg" class="card-img-top" alt="..." style="width: 200px;"><span class="badge bg-danger" style="width: 40px; margin-top: -50px;" >New</span>
+					<div class="card-body">
+					<h6 class="card-title">SON LIPHIP</h6><br>
+					 <a href="../product_details/pr_detail_BL_SECRET_LIPSTICKS.html"  class="btn btn-outline-success">Xem thêm</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<h4 align="center"><br>TOP SẢN PHẨM BÁN CHẠY NHẤT THÁNG 9</h4><br>
+		<div class="row header">
+			<div class="col-md-3">
+				<div class="card" style="width: 70%;">
+					<img src="../../images/kem-duong-trang-da-coringco-peach.png" class="card-img-top" alt="..." style="width: 200px;" align="center"><span style="width: 40px; margin-top: -50px;" class="badge bg-success">56%</span>
+					<div class="card-body">
+					<h6 class="card-title"><br>[HOT]KEM DƯỠNG TRẮNG DA CORINGCO PEACH</h6>
+					 <a href="../product_details/pr_detail_BL_SECRET_LIPSTICKS.html" class="btn btn-outline-success">Xem thêm</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="card" style="width: 70%;">
+					<img src="../../images/kem_bb_ngu.png" class="card-img-top" alt="..." style="width: 200px; " align="center" ><span style="width: 40px; margin-top: -50px;" class="badge bg-success">50%</span>
+					<div class="card-body">
+					<h6 class="card-title"><br>[HOT]KEM NGỦ SLEEPING BB</h6>
+					 <a href="../product_details/pr_detail_BL_SECRET_LIPSTICKS.html" class="btn btn-outline-success">Xem thêm</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="card" style="width: 70%;">
+					<img src="../../images/tinh-chat-mat-nna-ngu-cellnco.jpg" class="card-img-top" alt="..." style="width: 200px;"><span class="badge bg-danger" style="width: 40px; margin-top: -50px;" >New</span>
+					<div class="card-body">
+					<h6 class="card-title"><br>TINH CHẤT MẶT NẠ NGỦ CELLNCO</h6>
+					 <a href="../product_details/pr_detail_BL_SECRET_LIPSTICKS.html"  class="btn btn-outline-success">Xem thêm</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="card" style="width: 70%;">
+					<img src="../../images/Kem_Merbliss Pure Wedding Tone Up Cream.jpg" class="card-img-top" alt="..." style="width: 200px;"><span class="badge bg-danger" style="width: 40px; margin-top: -50px;" >New</span>
+					<div class="card-body">
+					<h6 class="card-title"><br>KEM MERBLISS PURE WEDDING TONE UP</h6>
+					 <a href="../product_details/pr_detail_BL_SECRET_LIPSTICKS.html"  class="btn btn-outline-success">Xem thêm</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container" style="background-color: #F0FEF9;">
+		<h4 align="center"><br>💖  SẢN PHẨM DƯỠNG DA TỐT NHẤT XỨ SỞ KIM CHI  💖<br><br></h4>
+		<div class="row">
+			<div class="row header">
+			<div class="col-md-3">
+				<div class="card" style="width: 70%;">
+					<img src="../../images/kem-duong-trang-da-coringco-peach.png" class="card-img-top" alt="..." style="width: 200px;" align="center"><span style="width: 40px; margin-top: -50px;" class="badge bg-success">56%</span>
+					<div class="card-body">
+					<h6 class="card-title"><br><br>KEM DƯỠNG TRẮNG DA CORINGCO PEACH</h6>
+					 <a href="../product_details/pr_detail_BL_SECRET_LIPSTICKS.html" class="btn btn-outline-success">Xem thêm</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="card" style="width: 70%;">
+					<img src="../../images/kem-duong-trang-da-lohajin-needs-nature-whitening-cream-3.jpg" class="card-img-top" alt="..." style="width: 200px; " align="center" ><span style="width: 40px; margin-top: -50px;" class="badge bg-success">50%</span>
+					<div class="card-body">
+					<h6 class="card-title"><br><br><br><br><br>KEM DƯỠNG TRẮNG DA LOHAJIN </h6>
+					 <a href="../product_details/pr_detail_BL_SECRET_LIPSTICKS.html" class="btn btn-outline-success">Xem thêm</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="card" style="width: 70%;">
+					<img src="../../images/kem_duong_trang_meb.jpg" class="card-img-top" alt="..." style="width: 200px;"><span class="badge bg-danger" style="width: 40px; margin-top: -50px;" >New</span>
+					<div class="card-body">
+					<h6 class="card-title"><br>KEM MERBLISS PURE WEDDING TONE UP</h6><br>
+					 <a href="../product_details/pr_detail_BL_SECRET_LIPSTICKS.html"  class="btn btn-outline-success">Xem thêm</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="card" style="width: 70%;">
+					<img src="../../images/tinh-chat-chong-lao-hoa-cellnco1.png" class="card-img-top" alt="..." style="width: 200px;"><span class="badge bg-danger" style="width: 40px; margin-top: -50px;" >New</span>
+					<div class="card-body">
+					<h6 class="card-title"><br>TINH CHẤT CHỐNG LÃO HOÁ CELLNCO</h6><br>
+					 <a href="../product_details/pr_detail_BL_SECRET_LIPSTICKS.html"  class="btn btn-outline-success">Xem thêm</a>
+					</div>
+				</div>
+			</div>
+		</div>
+			
+		</div>
+	</div>
+	<div class="container" style="background-color: #F5F5F5;">
+		<h4 align="center" ><br>🎁  SẢN PHẨM MAKEUP TỐT NHẤT NĂM 2020  🎁<br><br></h4>
+		<div class="row header">
+			<div class="col-md-3">
+				<div class="card" style="width: 70%;">
+					<img src="../../images/son-kem-li-romantic-velvet-tint1.png" class="card-img-top" alt="..." style="width: 200px;" align="center"><span style="width: 40px; margin-top: -50px;" class="badge bg-success">56%</span>
+					<div class="card-body">
+					<h6 class="card-title">[FLASH SALE]SON KEM LÌ ROMANTIC VELVET<br><br></h6>
+					 <a href="../product_details/pr_detail_BL_SECRET_LIPSTICKS.html" class="btn btn-outline-success">Xem thêm</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="card" style="width: 70%;">
+					<img src="../../images/phan-nuoc-coringco-cherry-cushion1.png" class="card-img-top" alt="..." style="width: 200px; " align="center" ><span style="width: 40px; margin-top: -50px;" class="badge bg-success">50%</span>
+					<div class="card-body">
+					<h6 class="card-title">[HOT]PHẤN NƯỚC CORINGCO CHERRY<br><br> </h6>
+					 <a href="../product_details/pr_detail_BL_SECRET_LIPSTICKS.html" class="btn btn-outline-success">Xem thêm</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="card" style="width: 70%;">
+					<img src="../../images/SON_BL_SECRET_LIPSTICK.png" class="card-img-top" alt="..." style="width: 200px;"><span class="badge bg-danger" style="width: 40px; margin-top: -50px;" >New</span>
+					<div class="card-body">
+					<h6 class="card-title">SON BL SECRET LIPSTICK</h6><br>
+					 <a href="../product_details/pr_detail_BL_SECRET_LIPSTICKS.html"  class="btn btn-outline-success">Xem thêm</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="card" style="width: 70%;">
+					<img src="../../images/phan-mat-shabam-shabam.jpg" class="card-img-top" alt="..." style="width: 200px;"><span class="badge bg-danger" style="width: 40px; margin-top: -50px;" >New</span>
+					<div class="card-body">
+					<h6 class="card-title">PHẤN MẮT SHABAM SHABAM</h6><br>
+					 <a href="../product_details/pr_detail_BL_SECRET_LIPSTICKS.html"  class="btn btn-outline-success">Xem thêm</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid" style="background-color: #2F503D;">
+		<div class="row">
+			<div class="col-md-3">
+				<img src="../../images/flogo.jpg" style="width: 160px;margin-top: 90px; margin-bottom:90px; margin-left: 80px;">
+			</div>
+			<div class="col-md-3">
+				<p style="color: white; margin-top: 50px;">
+					<b>HỖ TRỢ KHÁCH HÀNG</b>
+					<br>_____<br><br>
+					CHÍNH SÁCH BẢO MẬT<br>
+					CHÍNH SÁCH VẬN CHUYỂN<br>
+					CHÍNH SÁCH ĐỔI TRẢ HÀNG
+				</p>
+			</div>
+			<div class="col-md-3">
+				<p style="color: white; margin-top: 50px;">
+					<b>THANH TOÁN</b>
+					<br>_____<br><br>
+					CHUYỂN KHOẢN<br>
+					TIỀN MẶT<br>
+					ĐĂNG KÝ NHẬN KHUYẾN MÃI
+				</p>
+				<form>
+					
+				</form>
+			</div>
+			<div class="col-md-3">
+				<p style="color: white; margin-top: 50px;">
+					QUÉT MÃ <br>ĐỂ TẢI ỨNG DỤNG<br>ANDROID<br>
+					<img src="../../images/qr.jpg" style="width: 80px;">
+				</p>
+			</div>
+		</div>
+		<div class="row">
+			<hr>
+			<div class="col-md-1"></div>
+			<div class="col-md-10">
+				<p style="color:white; text-align: center;">Công ty TNHH Mỹ phẩm Quốc tế Emcos | Người đại điện: Nguyễn Thị Phương | Số ĐKKD 0108224774 do sở KHĐT Tp.Hà Nội cấp ngày 10/04/2018<br>Địa chỉ: Tòa nhà VTC online, số 18 Tam Trinh , phường Minh Khai, Quận Hai Bà Trưng, Hà Nội<br>Email: emcos@nevagroup.vn
+				</p>
+			</div>
+			<div class="col-md-3"></div>
+		</div>
+	</div>
+
+		
+	
+
+
+
+
+
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.6.0/umd/popper.min.js" integrity="sha512-BmM0/BQlqh02wuK5Gz9yrbe7VyIVwOzD1o40yi1IsTjriX/NGF37NyXHfmFzIlMmoSIBXgqDiG1VNU6kB5dBbA==" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="../../bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
